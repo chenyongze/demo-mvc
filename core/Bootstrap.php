@@ -16,7 +16,7 @@ class Bootstrap
      */
     public static function parseUrl()
     {
-        if ($s = isset($_GET['s'])) {
+        if (isset($_GET['s'])) {
             $info = explode('/', $_GET['s']);
             $class = '\web\controller\\' . ucfirst($info[0]);
             $action = $info[1];
@@ -24,6 +24,6 @@ class Bootstrap
             $class = '\web\controller\Index';
             $action = 'show';
         }
-        (new $class)->$action();
+        echo (new $class)->$action();
     }
 }
