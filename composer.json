@@ -1,0 +1,17 @@
+{
+    "name": "yongze/demo-mvc",
+    "authors": [{
+        "name": "chenyongze",
+        "email": "sapphire.php@gmail.com"
+    }],
+    "require": {},
+    "autoload": {
+        "files": [
+            "core/function.php"
+        ],
+        "psr-4": {
+            "core\\": "core",
+            "web\\": "web"
+        }
+    }
+}
