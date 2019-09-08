@@ -6,7 +6,14 @@ class Bootstrap
 {
     public static function run()
     {
+        session_start();
         self::parseUrl();
+    }
+
+
+    public static function say()
+    {
+        echo "welcome ~~~";
     }
 
     /**

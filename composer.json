@@ -5,6 +5,7 @@
         "email": "sapphire.php@gmail.com"
     }],
     "require": {},
+    "minimum-stability": "dev",
     "autoload": {
         "files": [
             "core/function.php"
